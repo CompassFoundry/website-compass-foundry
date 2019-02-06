@@ -38,7 +38,7 @@
 						<h2>Apply to Compass Create</h2>
 					</header>
 
-					<form method="post" action="https://formspree.io/hello@compassfoundry.com" target="_blank">
+					<form id="contactform" form method="POST">
 						<div class="row">
 							<div class="6u 12u(mobilep)">
 								<input type="text" name="name" placeholder="Name" required />
@@ -46,30 +46,30 @@
 							<div class="6u 12u(mobilep)">
 								<input type="email" name="email" placeholder="Email" required />
 							</div>
-              <div class="6u 12u(mobilep)">
-                <input type="text" name="location" placeholder="City, State/Territory, Country" />
-              </div>
-              <div class="6u 12u(mobilep)">
-                <input type="text" name="phone" placeholder="Phone Number - Optional" />
-              </div>
-						</div>
+				      <div class="6u 12u(mobilep)">
+					<input type="text" name="location" placeholder="City, State/Territory, Country" />
+				      </div>
+				      <div class="6u 12u(mobilep)">
+					<input type="text" name="phone" placeholder="Phone Number - Optional" />
+				      </div>
+				</div>
 						<div class="row">
 							<div class="12u">
-                <p>
-                  What do you most want to accomplish in the next sixth months?
-                </p>
+								<p>
+								  What do you most want to accomplish in the next sixth months?
+								</p>
 								<textarea name="message" placeholder="I want to change the world..." required rows="6"></textarea>
 							</div>
-              <div class="12u">
-                <p>
-                  What are you working on right now?
-                </p>
+					      <div class="12u">
+						<p>
+						  What are you working on right now?
+						</p>
 								<textarea name="message" placeholder="I'm changing the world...'" required rows="6"></textarea>
 							</div>
-              <div class="12u">
-                <p>
-                  What's your timeline?
-                </p>
+					      <div class="12u">
+						<p>
+						  What's your timeline?
+						</p>
 								<textarea name="message" placeholder="I'd like to build an MVP in 3 months..." required rows="2"></textarea>
 							</div>
 						</div>
@@ -81,6 +81,10 @@
 							</div>
 						</div>
 					</form>
+					<script>
+					    var contactform =  document.getElementById('contactform');
+					    contactform.setAttribute('action', '//formspree.io/' + 'nick' + '@' + 'compassfoundry' + '.' + 'com');
+					</script>
 	
 	<!-- Social Media -->
 					<!--
