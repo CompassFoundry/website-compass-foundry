@@ -3372,6 +3372,13 @@ input[type='button'].small,
     filter: saturate(0);
     margin: 2%;
   }
+  .customer-logos:hover {
+    flex-basis: 100px;
+    height: 75px;
+    padding: 10px;
+    filter: none;
+    margin: 2%;
+  }
 }
 
 a {
