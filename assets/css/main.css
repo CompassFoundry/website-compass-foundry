@@ -3337,10 +3337,9 @@ input[type='button'].small,
 
 /* Customer Logos */
 
-/* .customer-logos {
-  width: 175px;
+.customer-logos {
+  flex-basis: 175px;
   height: 100px;
-  justify-items: center;
   padding: 15px;
   filter: saturate(0);
   margin: 2%;
@@ -3351,4 +3350,4 @@ input[type='button'].small,
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-} */
+}
