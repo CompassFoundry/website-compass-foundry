@@ -30,6 +30,28 @@
 	})();
   </script>
   <!-- End Matomo Code -->
+
+<!-- Chat -->
+
+
+<script>
+	(function(d,t) {
+	  var BASE_URL="https://chatforcare.herokuapp.com";
+	  var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	  g.src=BASE_URL+"/packs/js/sdk.js";
+	  g.defer = true;
+	  g.async = true;
+	  s.parentNode.insertBefore(g,s);
+	  g.onload=function(){
+		window.chatwootSDK.run({
+		  websiteToken: 'Kj8RqoEf4sn7XF6Nw4mwe3Xx',
+		  baseUrl: BASE_URL
+		})
+	  }
+	})(document,"script");
+  </script>
+  
+  <!-- End Chat -->
   
   
 
